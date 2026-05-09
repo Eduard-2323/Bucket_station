@@ -20925,3 +20925,10 @@ Entries:
   id: 2305
   time: '2026-05-09T12:59:23.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3973
+- author: Mapleflavoureds
+  changes:
+    - type: Add
+      message: Added APC to RCD!
+  id: 2306
+  time: '2026-05-09T13:00:08.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3971

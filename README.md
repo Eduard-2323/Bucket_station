@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Resources/Textures/_Mono/Logo/logo.png" alt="Logo" width="300">
+  <img src="Resources/Textures/_Mono/Logo/logo.png" alt="Logo" width="900">
 </p>
 
 ## intro

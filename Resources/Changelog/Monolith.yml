@@ -21776,3 +21776,12 @@ Entries:
   id: 2401
   time: '2026-06-27T12:22:26.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4150
+- author: projectkepler-ru
+  changes:
+    - type: Tweak
+      message: >-
+        Enforcer has been fitted with an integrated barrel charger that
+        vapourize PDV whenever it fires
+  id: 2402
+  time: '2026-06-27T13:04:51.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4151

@@ -21792,3 +21792,10 @@ Entries:
   id: 2403
   time: '2026-06-28T06:59:12.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4140
+- author: GOLDMASK990
+  changes:
+    - type: Add
+      message: USSP/VG get their own lathes now.
+  id: 2404
+  time: '2026-06-28T07:24:48.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4154

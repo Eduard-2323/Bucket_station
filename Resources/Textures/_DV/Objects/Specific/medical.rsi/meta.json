@@ -112,22 +112,25 @@
             "name": "bloodpack-blue"
         },
         {
-			"name":"basic-suture-inhand-left",
+            "name": "basic-suture"
+        },
+        {
+			"name": "basic-suture-inhand-left",
 			"directions": 4
 		},
 		{
-			"name":"basic-suture-inhand-right",
+			"name": "basic-suture-inhand-right",
 			"directions": 4
 		},
 		{
-			"name":"advanced-regenerative-mesh"
+			"name": "advanced-regenerative-mesh"
 		},
 		{
-			"name":"advanced-regenerative-mesh-inhand-left",
+			"name": "advanced-regenerative-mesh-inhand-left",
 			"directions": 4
 		},
 		{
-			"name":"advanced-regenerative-mesh-inhand-right",
+			"name": "advanced-regenerative-mesh-inhand-right",
 			"directions": 4
 		}
         

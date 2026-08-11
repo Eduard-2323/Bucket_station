@@ -26,7 +26,10 @@
             "name": "variant-merc"
         },
         {
-            "name": "variant-bucket"  
+            "name": "variant-bucket"
+        },
+        {
+            "name": "variant-mmc"
         }
     ]
 }

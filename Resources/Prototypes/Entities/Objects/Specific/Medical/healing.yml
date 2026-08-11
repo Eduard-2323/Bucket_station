@@ -237,7 +237,7 @@
   - type: Item
     heldPrefix: medicated-suture
     storedRotation: -90
-  - type: healing
+  - type: Healing
     damageContainers:
     - Biological
     damage:

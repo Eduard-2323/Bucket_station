@@ -36,9 +36,9 @@
     damage:
       types:
         Heat: -15
-        Cold: -15
-        Shock: -15
-        Caustic: -10 #Was 5 per type & 1.5 caustic, Buffed due to limb damage changes (Goobstation)
+        Cold: -5
+        Shock: -5
+        Caustic: -5 #Was 5 per type & 1.5 caustic, Buffed due to limb damage changes (Goobstation)
     healingBeginSound:
       path: "/Audio/Items/Medical/ointment_begin.ogg"
       params:
@@ -75,7 +75,7 @@
 
 - type: entity
   name: regenerative mesh
-  description: Used to treat even the nastiest burns. Also effective against caustic burns.
+  description: An advanced medical burn mesh that treats burns more effectively
   parent: BaseHealingItem
   id: RegenerativeMesh
   suffix: Full
@@ -84,7 +84,7 @@
     tags:
     - Ointment
   - type: Sprite
-    state: regenerative-mesh
+    state: advanced-regenerative-mesh
   - type: Item
     heldPrefix: regenerative-mesh
   - type: Healing
@@ -92,10 +92,10 @@
     - Biological
     damage:
       types:
-        Heat: -20
-        Cold: -20
-        Shock: -20
-        Caustic: -20 #Was 10 per type, Buffed due to limb damage changes (Goobstation)
+        Heat: -25
+        Cold: -25
+        Shock: -25
+        Caustic: -20
     healingBeginSound:
       path: "/Audio/Items/Medical/ointment_begin.ogg"
       params:
@@ -108,17 +108,65 @@
         variation: 0.125
   - type: Stack
     stackType: RegenerativeMesh
+    count: 15
+  - type: StackPrice
+    price: 160
+
+- type: entity
+  id: RegenerativeMesh1
+  parent: RegenerativeMesh
+  Suffix: single
+  components:
+  - type: Stack
+    stackType: RegenerativeMesh
+    count: 1
+
+- type: entity
+  name: medicinal mesh
+  description: A medical burn mesh, meant to effectively treat burns
+  parent: BaseHealingItem
+  id: BasicMesh
+  suffix: Full
+  components:
+  - type: Tag
+    tags:
+    - Ointment
+  - type: Sprite
+    state: regenerative-mesh
+  - type: Item
+    heldPrefix: medicinal-mesh
+  - type: Healing
+    damageContainers:
+    - Biological
+    damage:
+      types:
+        Heat: -15
+        Cold: -15
+        Shock: -15
+        Caustic: -10
+    healingBeginSound:
+      path: "/Audio/Items/Medical/ointment_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/ointment_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: BasicMesh
     count: 15 #Was 10, Buffed due to limb damage changes (Goobstation)
   - type: StackPrice
     price: 80 # Mono - 20->80
 
 - type: entity
-  id: OintmentAdvanced1
-  parent: RegenerativeMesh
+  id: BasicMesh1
+  parent: BasicMesh
   suffix: Single
   components:
   - type: Stack
-    stackType: RegenerativeMesh
+    stackType: BasicMesh
     count: 1
 
 - type: entity
@@ -137,8 +185,9 @@
     damageContainers:
     - Biological
     damage:
-      groups:
-        Brute: -45 # was 5 for each, Buffed due to limb damage changes (Goobstation)
+      types:
+        blunt: -30
+        slash: -5
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
       params:
@@ -175,7 +224,7 @@
 
 - type: entity
   name: medicated suture
-  description: A suture soaked in medicine, treats blunt-force trauma effectively and closes wounds.
+  description: A medical suture dosed in medicine to improve it's effectiveness
   parent: BaseHealingItem
   id: MedicatedSuture
   suffix: Full
@@ -188,13 +237,14 @@
   - type: Item
     heldPrefix: medicated-suture
     storedRotation: -90
-  - type: Healing
+  - type: healing
     damageContainers:
     - Biological
     damage:
-      groups:
-        Brute: -60 # was 10 for each, now 20 for each type in the group, Buffed due to surgery changes (Goobstation)
-    bloodlossModifier: -10 # a suture should stop ongoing bleeding
+     types:
+      Slash: -25
+      Piercing: -35
+    bloodlossModifier: -10
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
       params:
@@ -207,17 +257,65 @@
         variation: 0.125
   - type: Stack
     stackType: MedicatedSuture
+    count: 15
+  - type: StackPrice
+    price: 160
+
+- type: entity
+  id: AdvancedSuture1
+  parent: MedicatedSuture
+  suffix: Single
+  components:
+  - type: Stack
+    StackType: MedicatedSuture
+    count: 1
+
+- type: entity
+  name: medical suture
+  description: A basic medicinal suture for treating wounds
+  parent: BaseHealingItem
+  id: BasicSuture
+  suffix: Full
+  components:
+  - type: Tag
+    tags:
+    - Brutepack
+  - type: Sprite
+    state: basic-suture
+  - type: Item
+    heldPrefix: medical-suture
+    storedRotation: -90
+  - type: Healing
+    damageContainers:
+    - Biological
+    damage:
+      types:
+       Slash: -10
+       Piercing: -15
+    bloodlossModifier: -5
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: BasicSuture
     count: 15 #Was 10, Buffed due to surgery changes (Goobstation)
   - type: StackPrice
     price: 80 # Mono - 40->80
 
 - type: entity
   id: BrutepackAdvanced1
-  parent: MedicatedSuture
+  parent: BasicSuture
   suffix: Single
   components:
   - type: Stack
-    stackType: MedicatedSuture
+    stackType: BasicSuture
     count: 1
 
 - type: entity
@@ -317,9 +415,9 @@
     - Biological
     damage:
       types:
-        Slash: -15 # Was 5
-        Piercing: -20 # Was 10, Buffed due to limb damage changes (Goobstation)
-    bloodlossModifier: -10
+        Slash: -5
+        Piercing: -5
+    bloodlossModifier: -2.5
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
       params:
@@ -356,15 +454,37 @@
 - type: entity
   name: aloe cream
   description: A topical cream for burns.
-  parent: Ointment ##Yes it's a direct reskin
+  parent: BaseHealingItem
   id: AloeCream
   components:
-  - type: Sprite
-    sprite: Objects/Specific/Hydroponics/aloe.rsi
-    state: cream
-  - type: Stack
-    stackType: AloeCream
-    count: 15 #Was 10, Buffed due to limb damage changes (Goobstation)
+   - type: Tag
+     tags:
+     - Ointment
+   - type: Sprite
+     sprite: Objects/Specific/Hydroponics/aloe.rsi
+     - type: Item
+     heldPrefix: aloe-cream
+     state: cream
+   - type: Healing
+     damageContainers:
+     - Biological
+     damage:
+      types:
+        cold: -5
+        heat: -5
+     healingBeginSound:
+      path: "/Audio/Items/Medical/ointment_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+     healingEndSound:
+      path: "/Audio/Items/Medical/ointment_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+   - type: Stack
+     stackType: AloeCream
+     count: 15 #Was 10, Buffed due to limb damage changes (Goobstation)
 
 - type: entity
   parent: BaseHealingItem

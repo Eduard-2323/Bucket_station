@@ -47,3 +47,17 @@
   spawn: RegenerativeMesh
   maxCount: 15 #Mono: Increased stacks from 10 to 15
 
+- type: stack
+  id: BasicSuture
+  name: basic-suture
+  icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: basic-suture }
+  spawn: BasicSuture
+  maxCount: 15
+
+- type: stack
+  id: AdvancedMesh
+  name: advanced-mesh
+  icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: advanced-regenerative-mesh}
+  spawn: AdvancedMesh
+  maxCount: 15
+

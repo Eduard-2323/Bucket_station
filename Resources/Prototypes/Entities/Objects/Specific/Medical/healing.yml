@@ -462,7 +462,7 @@
      - Ointment
    - type: Sprite
      sprite: Objects/Specific/Hydroponics/aloe.rsi
-     - type: Item
+   - type: Item
      heldPrefix: aloe-cream
      state: cream
    - type: Healing

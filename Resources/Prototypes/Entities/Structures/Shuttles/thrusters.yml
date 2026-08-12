@@ -352,3 +352,18 @@
       repairTo: Thruster
       repairTime: 6
       repairCost: 6
+      
+      
+- type: entity
+  parent: Thruster
+  id: Thruster_bucket
+  name: Bucket corp branded arc thruster
+  description: an very poorly built arc thruster that somehow provides an large amount of power
+  components:
+  - type: Sprite
+    sprite: Structures/Shuttles/bucket_thrust.rsi
+    layers:
+    - state: base
+    - state: thrust
+  - type: Thruster
+    thrust: 500

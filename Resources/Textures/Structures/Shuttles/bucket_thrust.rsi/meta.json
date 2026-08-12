@@ -8,11 +8,11 @@
   "license": "none its just like we made this thats it use it if you want ig qwq",
   "states": [
     {
-      "name": "base_bucket",
+      "name": "base",
       "directions": 4
     },
     {
-      "name": "thrust_bucket",
+      "name": "thrust",
       "directions": 4,
       "delays": [
         [
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "name": "thrust_burn_unshaded_bucket",
+      "name": "thrust_burn_unshaded",
       "directions": 4,
       "delays": [
         [

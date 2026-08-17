@@ -1,0 +1,12 @@
+- type: entity
+  id: Bullet115x46mmAPRIP
+  name: bullet (11.5x46mm AP RIP)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 80
+        Slash: 15
+    armorPenetration: 1

@@ -1,0 +1,30 @@
+- type: entity
+  id: BaseCartridge115x46mmAPRIP
+  name: cartridge (11.5x46mm AP RIP)
+  parent: BaseCartridge
+  description: An extremely rare bullet for an ancient revolver
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - Cartridge115x46mm
+  - type: CartridgeAmmo
+    proto: Bullet115x46mmAPRIP
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/magnum_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: Cartridge115x46mmAPRIP
+  name: Cartridge (11.5x46mm AP RIP)
+  parent: BaseCartridge115x46mmAPRIP
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet115x46mmAPRIP

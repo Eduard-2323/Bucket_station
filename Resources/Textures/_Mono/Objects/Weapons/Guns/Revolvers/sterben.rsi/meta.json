@@ -5,6 +5,9 @@
     },
     "states": [
         {
+            "name": "icon"
+        },
+        {
             "name": "base"
         },
         {

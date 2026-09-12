@@ -1660,3 +1660,64 @@
       - !type:AdjustReagent
         reagent: MindbreakerToxin
         amount: -3.0
+
+- type: reagent
+  id: Peridaxon
+  name: reagent-name-peridaxon
+  group: Medicine
+  desc: reagent-desc-peridaxon
+  physicalDesc: reagent-physical-desc-oily
+  flavor: medicine
+  color: "#B3ADA4"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Peridaxon
+          max: 46
+        damage:
+          types:
+            Asphyxiation: -2.5
+            Poison: -5
+      - !type:EvenHealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 0
+          max: 46
+        damage:
+          Brute: -5
+          Burn: -5
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+        - !type:ReagentThreshold
+          min: 20
+        damage:
+          types:
+            Asphyxiation: 10
+            Poison: 5
+      - !type:AdjustReagent
+        reagent: Impedrezene
+        amount: -2
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Impedrezene
+          min: 1
+        reagent: Peridaxon
+        amount: -1
+      - !type:GenericStatusEffect
+        key: KnockedDown
+        time: 1.25
+        type: Remove
+      - !type:GenericStatusEffect
+        key: Adrenaline 
+        component: IgnoreSlowOnDamage
+        time: 2.5
+      - !type:MovespeedModifier
+        walkSpeedModifier: 0.9
+        sprintSpeedModifier: 0.9

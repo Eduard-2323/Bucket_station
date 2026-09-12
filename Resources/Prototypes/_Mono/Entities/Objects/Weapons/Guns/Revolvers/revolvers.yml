@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseWeaponRevolver
-  name: Sterben Single-Action Magnum
+  name: Sterben (11.5x46mm AP RIP)
   id: WeaponRevolverSterben
   description: A revolver from a forgotten past, used to be manufactured before the massive growth of NT, use it well.
   components:

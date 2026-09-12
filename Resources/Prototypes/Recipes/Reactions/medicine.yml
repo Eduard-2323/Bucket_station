@@ -629,3 +629,17 @@
       amount: 1
   products:
     Haloperidol: 5
+
+- type: reaction
+  id: Peridaxon
+  reactants:
+    Epinephrine:
+      amount: 2
+    Tricordrazine:
+      amount: 2
+    Potassium:
+      amount: 1
+    Phosphorus:
+      amount: 1
+    Oil:
+      amount: 2

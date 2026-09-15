@@ -118,3 +118,64 @@
         whitelist:
           tags:
           - MonoOptic8x
+
+- type: entity
+  name: Browning Automatic Rifle (7.62x54mmR)
+  parent: BaseWeaponLightMachineGun
+  description: An ancient rifle used before humanity even had space travel, remade in the modern standard for mass use by Bucket Corp.
+  id: WeaponLMGBAR
+  components:
+  - type: Sprite
+    sprite: _Mono\Objects\Weapons\Guns\LMGs\BAR.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _Mono/Objects/Weapons/Guns/LMGs/BAR_inhands_32x.rsi
+    shape:
+    - 0,0,4,3
+  - type: Clothing
+    sprite: _Mono/Objects/Weapons/Guns/LMGs/BAR_inhands_32x.rsi
+  - type: GunWieldBonus
+    minAngle: -25
+    maxAngle: -45
+  - type: Gun
+    minAngle: 25
+    maxAngle: 55
+    angleIncrease: 3
+    angleDecay: 45
+    fireRate: 7.5
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/heavy_rifle_1.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/batrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine762x54mmRFMJLarge
+        insertSound: /Audio/Weapons/Guns/MagIn/lmg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/lmg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine762x54mmRFMJLarge
+          - Magazine762x54mmRFMJ
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge762x51mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+          - Cartridge762x54mmRFMJ
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice
+    price: 7500

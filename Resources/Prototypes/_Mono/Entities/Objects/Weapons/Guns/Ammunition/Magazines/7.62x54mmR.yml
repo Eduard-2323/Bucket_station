@@ -165,3 +165,18 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: Magazine762x54mmRFMJLarge
+  name: "magazine (7.62x54mmR FMJ Large)"
+  parent: BaseMagazine762x54mmR
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge762x54mmRFMJ
+    capacity: 50
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

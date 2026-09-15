@@ -583,3 +583,120 @@
     rsi:
       sprite: _RMC14/Interface/MousePointer/smartgun_mouse.rsi
       state: all
+
+- type: entity
+  name: Bergsmann MP18 (5.7x28mm FMJ)
+  parent: [BaseWeaponSubMachineGun, BaseGunWieldable]
+  id: WeaponSubMachineGunMP18
+  description: An ancient automatic submachine gun from before humanity became space-faring.
+  components:
+  - type: Sprite
+    sprite: _Mono\Objects\Weapons\Guns\SMGs\mp18.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -25
+  - type: Clothing
+    sprite: _Mono\Objects\Weapons\Guns\SMGs\mp18.rsi
+  - type: Gun
+    minAngle: 25
+    maxAngle: 45
+    angleIncrease: 3.5
+    angleDecay: 3.5
+    fireRate: 5.8
+    selectedMode: FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg
+    availableModes:
+    - FullAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine57x28mmSubMachineSnailDrumFMJ
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine57x28mmSubMachineSnailDrumFMJ
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge57x28mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge57x28mmFMJ
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice
+    price: 2750
+  - type: Item
+    shape:
+    - 0,0,3,3
+
+- type: entity
+  name: Schönheit der Vernichtung (5.7x28mm FMJ)
+  parent: [BaseWeaponSubMachineGun, BaseGunWieldable]
+  id: WeaponSubMachineGunMP18Schonheit
+  description: A submachine gun modified by her to serve and protect.
+  components:
+  - type: Sprite
+    sprite: _Mono\Objects\Weapons\Guns\SMGs\SchonheitderVernichtung.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: GunWieldBonus
+    minAngle: -2.5
+    maxAngle: -7.5
+  - type: Clothing
+    sprite: _Mono\Objects\Weapons\Guns\SMGs\SchonheitderVernichtung.rsi
+  - type: Gun
+    minAngle: 4
+    maxAngle: 12.5
+    angleIncrease: 2
+    angleDecay: 4
+    fireRate: 8.3
+    damageModifier: 1.25
+    selectedMode: FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg
+    availableModes:
+    - FullAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine57x28mmSubMachineSnailDrumFMJ
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine57x28mmSubMachineSnailDrumFMJ
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge57x28mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge57x28mmFMJ
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice
+    price: 37500
+  - type: Item
+    shape:
+    - 0,0,3,2

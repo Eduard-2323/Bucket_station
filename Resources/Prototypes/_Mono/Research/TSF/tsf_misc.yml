@@ -16,20 +16,6 @@
   position: 2, -11
 
 - type: technology
-  id: TsfmcMopp
-  name: research-technology-tsfmc-mopp-equipment
-  entityIcon: ClothingUniformTsfmcMopp
-  discipline: TsfmcEquipment
-  tier: 2
-  cost: 15000
-  recipeUnlocks:
-  - ClothingUniformTsfmcMoppTsf
-  - ClothingHandsGlovesMoppTsf
-  technologyPrerequisites:
-  - TsfmcAdvancedEquipment
-  position: 3, -23
-
-- type: technology
   id: TsfEshield
   name: research-technology-tsfmc-eshield
   entityIcon: EnergyShield
@@ -80,6 +66,7 @@
   recipeUnlocks:
   - FlyssaVoucherTSF
   - AltairVoucherTSF
+  - ZephyrVoucherTSF
   - FujianVoucherTSF
   - PolarisVoucherTSF
   technologyPrerequisites:
@@ -153,7 +140,7 @@
   technologyPrerequisites:
   - TSFBasicBorgModule
   position: 4, -12
-  
+
 - type: technology
   id: TSFAdvancedBionics
   name: research-technology-tsfmc-sandevistan

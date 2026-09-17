@@ -617,30 +617,30 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine57x28mmSubMachineSnailDrumFMJ
+        startingItem: Magazine9x19mmSubMachineSnailDrumFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine57x28mmSubMachineSnailDrumFMJ
+            - Magazine9x19mmSubMachineSnailDrumFMJ
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge57x28mmFMJ
+        startingItem: Cartridge9x19mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge57x28mmFMJ
+            - Cartridge9x19mmFMJ
   - type: MagazineVisuals
     magState: mag
     steps: 1
     zeroVisible: true
   - type: Appearance
   - type: StaticPrice
-    price: 2750
+    price: 1450
   - type: Item
     shape:
-    - 0,0,3,3
+    - 0,0,3,2
 
 - type: entity
   name: Schönheit der Vernichtung (5.7x28mm FMJ)
@@ -683,6 +683,7 @@
         whitelist:
           tags:
             - Magazine57x28mmSubMachineSnailDrumFMJ
+            - Magazine9x19mmSubMachineSnailDrumFMJ
       gun_chamber:
         name: Chamber
         startingItem: Cartridge57x28mmFMJ
@@ -690,6 +691,7 @@
         whitelist:
           tags:
             - Cartridge57x28mmFMJ
+            - Cartridge9x19mmFMJ
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -699,4 +701,4 @@
     price: 37500
   - type: Item
     shape:
-    - 0,0,3,2
+    - 0,0,3,1

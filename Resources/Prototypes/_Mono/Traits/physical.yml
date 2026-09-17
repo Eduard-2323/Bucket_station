@@ -439,3 +439,68 @@
   - type: ShuttleBoostingPilot #Found in: content.server\_mono\Shuttles\Components\
     angularMultiplier: 1.1
     accelerationMultiplier: 1.1
+
+- type: trait
+  id: Survivalist
+  name: trait-survivalist-name
+  description: trait-survivalist-desc
+  category: Physical
+  cost: -14
+  mutuallyExclusiveTraits:
+  - WillToLive
+  - Redshirt
+  - WillToDie
+  speciesBlacklist:
+  - IPC
+  blacklist:
+    components:
+    - BorgChassis
+  components:
+  - type: WillToDie
+    deadDecrease: 199
+
+- type: trait
+  id: Restless
+  name: trait-restless-name
+  description: trait-restless-desc
+  category: Physical
+  cost: 10
+  mutuallyExclusiveTraits:
+   - Feeble
+   - GraveCaller
+   - Steadfast
+  speciesBlacklist:
+   - Felinid
+   - Tajaran
+  components:
+    - type: SlowOnDamage
+      speedModifierThresholds:
+        "45": 1.4
+        "65": 1.2
+
+- type: trait
+  id: Gravecaller
+  name: trait-gravecaller-name
+  description: trait-gravecaller-desc
+  category: Physical
+  cost: 14
+  mutuallyExclusiveTraits:
+  - Tenacity
+  - Restless
+  - Feeble
+  - WillToDie
+  - WillToLive
+  - Redshirt
+  - Steadfast
+  speciesBlacklist:
+  - IPC
+  blacklist:
+    components:
+    - BorgChassis
+  components:
+  - type: GlassJaw
+    critDecrease: -99
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      "100": 0.75
+      "150": 0.5

@@ -91,3 +91,12 @@ trait-hardened-lymphocytes-desc = Your marrow has been treated with melanocyte-h
 
 trait-helmsmanship-name = Helmsmanship
 trait-helmsmanship-desc = Engines and stabilizers rumble in harmony under your yoke. Ships under your control turn and accelerate 10% faster.
+
+trait-survivalist-name = Survivalist
+trait-survivalist-desc = Either by sheer incompetence or you really are just that weak, all it takes is one hit for you to die, tread carefully. Decreases your threshold to die by 199 points
+
+trait-restless-name = Restless
+trait-restless-desc = You don't stop when hurt, isntead you speed up, ensuring you may survive or ensure their death, godspeed. Increases your speed by 20% while at 45 damage and by 40% while at 65 damage.
+
+trait-gravecaller-name = Gravecaller
+trait-gravecaller-desc = You have been affected by a strange space-time anomaly, leading to you being incapable of being put into critical condition, instead just immediately dying upon the death threshold. Increases your crit threshold by 100.

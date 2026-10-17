@@ -68,6 +68,6 @@
 - type: radioChannel
   id: NTPrivate
   name: chat-radio-NT
-  keycode: 'e'
+  keycode: '5'
   frequency: 9886
   color: "#5D3FD3"

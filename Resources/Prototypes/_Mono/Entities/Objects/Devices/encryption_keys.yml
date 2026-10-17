@@ -138,6 +138,24 @@
 
 - type: entity
   parent: EncryptionKey
+  id: EncryptionKeyMieyoCommand
+  name: MMC Command encryption key
+  description: An encryption key for Mieyo command communications.
+  components:
+  - type: EncryptionKey
+    channels:
+    - MieyoCommand
+    defaultChannel: MieyoCommand
+  - type: Item
+    sprite: _Mono/Objects/Devices/encryption_keys.rsi
+  - type: Sprite
+    sprite: _Mono/Objects/Devices/encryption_keys.rsi
+    layers:
+    - state: crypt_mmc
+    - state: csec_label
+
+- type: entity
+  parent: EncryptionKey
   id: EncryptionKeyNTPrivate
   name: Centcomm private network enryption key
   description: A specialised extremely long-range radio encryption key for Nanotrasen

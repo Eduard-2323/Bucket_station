@@ -84,6 +84,12 @@
         },
         {
             "name": "tranquilizer-spent"
+        },
+        {
+            "name": "cryo"
+        },
+        {
+            "name": "cryo-spent"
         }
     ]
 }

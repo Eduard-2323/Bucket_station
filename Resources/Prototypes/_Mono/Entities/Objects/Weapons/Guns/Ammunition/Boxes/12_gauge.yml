@@ -156,3 +156,16 @@
       - state: base
         map: ["enum.GunVisualLayers.Base"]
       - state: flechette
+
+- type: entity
+  name: shotgun shell box (12 gauge cryo)
+  parent: AmmoProvider12_gaugeShotgunShell
+  id: AmmoBox12_gaugeCryo
+  components:
+    - type: BallisticAmmoProvider
+      proto: ShellShotgun12_gaugeCryo
+    - type: Sprite
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: cryo

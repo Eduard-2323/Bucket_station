@@ -243,3 +243,17 @@
     proto: Pellet12_gaugeFlechetteSpread
   - type: SpentAmmoVisuals
     state: "slug"
+
+- type: entity
+  id: ShellShotgun12_gaugeCryo
+  name: shotgun shell (12 gauge Cryo)
+  parent: BaseShellShotgun12_gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: cryo
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: Pellet12_gaugeCryoSpread
+  - type: SpentAmmoVisuals
+    state: "cryo"

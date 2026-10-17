@@ -382,3 +382,34 @@
     proto: Pellet12_gaugeFlechette
     count: 6
     spread: 12
+
+# cryo shell
+- type: entity
+  id: Pellet12_gaugeCryo
+  name: Pellet12_gauge (12 gauge cryo)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 2
+        Cold: 9
+        Structural: 35
+    armorPenetration: 0.75
+  - type: Tracer
+    color: "#B8FFFF"
+    length: 3
+
+- type: entity
+  id: Pellet12_gaugeCryoSpread
+  parent: Pellet12_gaugeCryo
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ProjectileSpread
+    proto: Pellet12_gaugeCryo
+    count: 7
+    spread: 6

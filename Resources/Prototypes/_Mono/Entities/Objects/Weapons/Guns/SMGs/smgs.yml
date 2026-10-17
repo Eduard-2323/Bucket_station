@@ -585,7 +585,7 @@
       state: all
 
 - type: entity
-  name: Bergsmann MP18 (5.7x28mm FMJ)
+  name: Bergsmann MP18 (9x19mm FMJ)
   parent: [BaseWeaponSubMachineGun, BaseGunWieldable]
   id: WeaponSubMachineGunMP18
   description: An ancient automatic submachine gun from before humanity became space-faring.

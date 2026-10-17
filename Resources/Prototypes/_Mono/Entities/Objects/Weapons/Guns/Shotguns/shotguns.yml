@@ -258,3 +258,42 @@
   - type: StaticPrice
     price: 600
     vendPrice: 3000
+
+- type: entity
+  name: NTE-AS TASG-11 supressed shotgun (12 gauge)
+  parent: [BaseWeaponShotgun, BaseGunWieldable]
+  id: WeaponShotgunTASG
+  description: A highly specialised supressed shotgun from nanotrasen's elite armory firing specialised cryogenic rounds.
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,4,1
+    sprite: _Mono/Objects/Weapons/Guns/Shotguns/TASG11_inhands_64x.rsi
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Shotguns/TASG11.rsi
+  - type: Clothing
+    sprite: _Mono/Objects/Weapons/Guns/Shotguns/TASG11_inhands_64x.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
+      params:
+        volume: -25
+    fireRate: 5
+    selectedMode: Semiauto
+    damageModifier: 3
+    availableModes:
+    - SemiAuto
+  - type: GunSpreadModifier
+    spread: 0.3
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - ShellShotgun12_gaugeBuckshot
+    capacity: 8
+    proto: ShellShotgun12_gaugeCryo
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
+  - type: StaticPrice
+    vendPrice: 86500

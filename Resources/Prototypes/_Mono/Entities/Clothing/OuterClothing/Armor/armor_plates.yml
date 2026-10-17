@@ -166,3 +166,43 @@
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+
+# general
+- type: entity
+  parent: [BaseItem, ArmorPlateRepairableBase]
+  id: ArmorPlateMulti
+  name: ENEMY type-V armor plate
+  description: A robust slab of a copper and titanium alloy designed to withstand all types of damage
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/ArmorPlate/armor_plates.rsi
+    state: multi
+  - type: Item
+    sprite: _Mono/Clothing/ArmorPlate/armor_plates.rsi
+    size: Normal
+  - type: ArmorPlateItem
+    maxDurability: 350
+    walkSpeedModifier: 0.90
+    sprintSpeedModifier: 0.90
+    staminaDamageMultipliers:
+      Absorbed: 0.75
+    damageToPlate:
+      Piercing: 0.5
+      Heat: 0.5
+      Blunt: 0.75
+      Slash: 0.75
+    absorptionRatios:
+      Piercing: 1
+      Heat: 1
+      Blunt: 0.75
+      Slash: 0.75
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 350
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

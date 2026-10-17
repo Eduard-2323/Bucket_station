@@ -516,3 +516,16 @@
   products:
     Tazinide: 1
 
+- type: reaction
+  id: ExoticToxin
+  reactants:
+    Ambuzol: 
+      amount: 2
+    Epinephrine:
+      amount: 1
+    Dexosyephedrine:
+      amount: 1
+    FerrochromicAcid:
+      amount: 1
+  products:
+    ExoticToxin: 5

@@ -155,4 +155,7 @@ reagent-name-haloperidol = haloperidol
 reagent-desc-haloperidol = Removes most stimulating and hallucinogenic drugs. Reduces druggy effects and jitteriness. Causes drowsiness.
 
 reagent-name-peridaxon = peridaxon
-reagent-desc-peridaxon = An easy to synthesize in factory medicine designed to act as combat medicine.
+reagent-desc-peridaxon = Extremely advanced combat medicine that makes you stay down for shorter however induces motor function loss.
+
+reagent-name-rejuvazone = rejuvazone
+reagent-desc-rejuvazone = An advanced piece of medicine capable of healing the wounds of those highly injured near instantly, works even on the dead.

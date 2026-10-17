@@ -1679,7 +1679,7 @@
           max: 46
         damage:
           types:
-            Asphyxiation: -2.5
+            Asphyxiation: -7.5
             Poison: -5
       - !type:EvenHealthChange
         conditions:
@@ -1687,8 +1687,8 @@
           min: 0
           max: 46
         damage:
-          Brute: -5
-          Burn: -5
+          Brute: -12
+          Burn: -16
       - !type:HealthChange
         conditions:
         - !type:OrganType
@@ -1719,5 +1719,33 @@
         component: IgnoreSlowOnDamage
         time: 2.5
       - !type:MovespeedModifier
-        walkSpeedModifier: 0.9
-        sprintSpeedModifier: 0.9
+        walkSpeedModifier: 0.6
+        sprintSpeedModifier: 0.6
+
+- type: reagent
+  id: Rejuvazone
+  name: reagent-name-rejuvazone
+  group: Medicine
+  desc: reagent-desc-rejuvazone
+  physicalDesc: reagent-physical-desc-overpowering
+  flavor: medicine
+  color: "#0FFF50"
+  worksOnTheDead: true
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:EvenHealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 75
+        damage:
+          Burn: -175
+          Toxin: -175
+          Airloss: -175
+          Brute: -175
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          min: 75
+        reagent: Rejuvazone
+        amount: -75

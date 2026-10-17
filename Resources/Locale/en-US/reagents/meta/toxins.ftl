@@ -84,3 +84,6 @@ reagent-desc-mechanotoxin = A neurotoxin used as venom by some species of spider
 
 reagent-name-toxintrash = trash 
 reagent-desc-toxintrash = An awful-smelling fluid. Deadly to non-vox.
+
+reagent-name-exotictoxin = exotic liquid
+reagent-name-exotictoxin = A terrifyingly potent liquid used to make extremely advanced medications, don't use it alone however.

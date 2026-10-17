@@ -635,11 +635,25 @@
   reactants:
     Epinephrine:
       amount: 2
-    Tricordrazine:
+    ExoticToxin:
       amount: 2
-    Potassium:
-      amount: 1
     Phosphorus:
       amount: 1
     Oil:
       amount: 2
+  products:
+    Peridaxon: 3.5
+
+- type: reaction
+  id: Rejuvazone
+  reactants:
+    Necrosol:
+      amount: 2
+    ExoticToxin:
+      amount: 2
+    Omnizine:
+      amount: 1
+    Epinephrine:
+      amount: 1
+  products:
+    Rejuvazone: 3

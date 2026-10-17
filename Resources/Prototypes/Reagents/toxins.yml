@@ -832,3 +832,30 @@
         conditions:
         - !type:OrganType
           type: Vox
+
+- type: reagent
+  id: ExoticToxin
+  name: reagent-name-exotictoxin
+  group: Toxins
+  desc: reagent-desc-exotictoxin
+  physicalDesc: reagent-physical-desc-exhilarating
+  flavor: medicine
+  color: "#FF00FF"
+  metabolisms:
+    Poison:
+      effects:
+      - !type:Jitter
+        conditions:
+        - !type:ReagentThreshold
+          min: 5
+      - !type:MovespeedModifier
+        walkSpeedModifier: 0.4
+        sprintSpeedModifier: 0.4
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType # Goobstation - Yowie
+          type: Yowie
+          shouldHave: false
+        damage:
+          types:
+            Caustic: 12

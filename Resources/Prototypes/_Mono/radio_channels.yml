@@ -64,3 +64,10 @@
   keycode: '1'
   frequency: 1536
   color: "#AAAAAA"
+
+- type: radioChannel
+  id: NTPrivate
+  name: chat-radio-NT
+  keycode: 'e'
+  frequency: 9886
+  color: "#5D3FD3"

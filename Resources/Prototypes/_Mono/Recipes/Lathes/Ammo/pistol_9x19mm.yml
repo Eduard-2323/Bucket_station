@@ -186,3 +186,14 @@
   parent: BaseAmmoFMJPistolCaliberBigAmmoBoxRecipe
   id: AmmoBox9x19mmBigFMJ
   result: AmmoBox9x19mmBigFMJ
+
+#snail drums
+- type: latheRecipe
+  parent: BaseAmmoFMJPistolCaliberSubMachineGunMagazineRecipe
+  id: Magazine9x19mmSubMachineGunSnailDrumFMJ
+  result: Magazine9x19mmSubMachineSnailDrumFMJ
+
+- type: latheRecipe
+  parent: BaseAmmoEmptyPistolCaliberSubMachineGunMagazineRecipe
+  id: Magazine9x19mmSubMachineGunSnailDrumEmpty
+  result: Magazine9x19mmSubMachineGunSnailDrumEmpty

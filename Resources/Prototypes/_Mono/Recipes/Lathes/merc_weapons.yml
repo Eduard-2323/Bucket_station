@@ -140,6 +140,19 @@
     Plastic: 500
 
 - type: latheRecipe
+  id: WeaponSubMachineGunMP18
+  parent: BaseWeaponRecipeLong
+  result: WeaponSubMachineGunMP18
+  categories:
+  - SMGs
+  - Ballistic
+  - Weapons
+  materials:
+    Steel: 1000
+    Plasteel: 500
+    Wood: 500
+
+- type: latheRecipe
   id: WeaponShotgunHelepolis
   parent: BaseWeaponRecipeLong
   result: WeaponShotgunHelepolis

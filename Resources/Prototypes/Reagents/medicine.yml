@@ -1746,6 +1746,6 @@
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold
-          min: 75
+          min: 76
         reagent: Rejuvazone
-        amount: -75
+        amount: -76

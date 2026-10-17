@@ -264,3 +264,55 @@
           Quantity: 15
         - ReagentId: Dylovene
           Quantity: 5
+
+- type: entity
+  name: revival medipen
+  parent: NFChemicalMedipen
+  id: RevivalMedipen
+  description: A singular dose of Rejuvazone, useful to rapidly bring back a friend or yourself.
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: revivalpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    emptySpriteName: revivalpen_empty
+  - type: Hypospray
+    transferAmount: 75
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 75.5
+        reagents:
+        - ReagentId: Rejuvazone
+          Quantity: 75.5
+
+- type: entity
+  name: advanced combat medipen
+  parent: NFChemicalMedipen
+  id: AdvCombatMedipen
+  description: A rapid dose of ephedrine, peridaxon, tranexamic acid and saline to get yourself back in a fight fast.
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: advcombatpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    emptySpriteName: advcombatpen_empty
+  - type: Hypospray
+    transferAmount: 45
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 45
+        reagents:
+        - ReagentId: TranexamicAcid
+          Quantity: 10
+        - ReagentId: Saline
+          Quantity: 10
+        - ReagentId: Ephedrine
+          Quantity: 10
+        - ReagentId: Peridaxon
+          Quantity: 15

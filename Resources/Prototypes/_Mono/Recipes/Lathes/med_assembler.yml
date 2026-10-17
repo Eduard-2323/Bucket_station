@@ -194,3 +194,24 @@
   reagents:
     Leporazine: 20
     Dermaline: 20
+
+- type: latheRecipe
+  id: RevivalMedipen
+  result: RevivalMedipen
+  completetime: 15
+  entities:
+    BlankMediPen: 1
+  reagents:
+    Rejuvazone: 75
+
+- type: latheRecipe
+  id: AdvCombatMedipen
+  result: AdvCombatMedipen
+  completetime: 10
+  entities:
+    BlankMediPen: 1
+  reagents:
+    Peridaxon: 15
+    TranexamicAcid: 10
+    Saline: 10
+    Ephedrine: 10

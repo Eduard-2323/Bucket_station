@@ -57,6 +57,18 @@
     },
     {
       "name": "medipen-inhand-right"
+    },
+    {
+      "name": "revivalpen"
+    },
+    {
+      "name": "revivalpen_empty"
+    },
+    {
+      "name": "advcombatpen"
+    },
+    {
+      "name": "advcombatpen_empty"
     }
   ]
 }

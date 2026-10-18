@@ -100,3 +100,6 @@ trait-restless-desc = You don't stop when hurt, isntead you speed up, ensuring y
 
 trait-gravecaller-name = Gravecaller
 trait-gravecaller-desc = You have been affected by a strange space-time anomaly, leading to you being incapable of being put into critical condition, instead just immediately dying upon the death threshold. Increases your crit threshold by 100.
+
+trait-heretic-name = Heretic
+trait-heretic-desc = You've wronged the Phaethon Dynasty, or at the very least the Sultanate thinks you have. You are liable (50% chance) to be marked for death by the Sultanate and hunted down by the PDV as a result.

@@ -9,6 +9,9 @@ uplink-pirate-interdyne-defibrillator-desc = An elite compact defibrillator that
 uplink-pirate-chemical-synthesis-kit-name = Chemical Synthesis Kit
 uplink-pirate-chemical-synthesis-kit-desc = A starter kit for the aspiring chemist, includes toxin and vestine for all your bioweapon needs!
 
+uplink-pirate-vestine-vial-name = Vestine Vial (30u)
+uplink-pirate-vestine-vial-desc = A vial of expensive anomalous liquid, synthesized from the native fauna of Pizt. Useful for advanced chemical production.
+
 uplink-pirate-anti-poison-pen-name = Poison auto-injector
 uplink-pirate-anti-poison-pen-desc = A rapid dose of anti-poison. Contains ultravasculine and epinephrine.
 
@@ -98,7 +101,7 @@ uplink-pirate-security-cyborg-module-desc = A machete, an energy gun, and a stun
 uplink-pirate-voicemask-name = Chameleon Voicemask
 uplink-pirate-voicemask-desc = A voicemask to engage in some subterfuge and tomfoolery... or just keep your identity hidden. Obfuscating your voice when speaking over the Vanguard radio is heavily advised.
 
-uplink-pirate-blank-id-name = Blank ID Card 
+uplink-pirate-blank-id-name = Blank ID Card
 uplink-pirate-blank-id-desc = A blank vagrant ID card with no identifying features. Can be customised to your heart's content at Helios' ID card console.
 
 uplink-pirate-chameleon-pda-name = Chameleon PDA
@@ -118,6 +121,9 @@ uplink-pirate-cash10000-desc = That's my boy, you made my day.
 
 uplink-pirate-cash100000-name = 100,000 credits
 uplink-pirate-cash100000-desc = That's my boy, you really made my day.
+
+uplink-pirate-telecrystal-25-name = 25 Telecrystals
+uplink-pirate-telecrystal-25-desc = Twenty-five telecrystals, used to directly import items from the distant black markets of the Perseus Arm.
 # desc is quote
 
 uplink-syndicate-applicator-name = Advanced Nanite Applicator
@@ -345,6 +351,15 @@ uplink-pirate-syndisupersurplus-desc = Contains a huge amount of imported good f
 
 uplink-pdv-t0-voucher-name = PDV Tier 0 Ship Voucher
 uplink-pdv-t0-voucher-desc = A single-use voucher for any small ship.
+
+uplink-pdv-t1-voucher-name = PDV Tier 1 Ship Voucher
+uplink-pdv-t1-voucher-desc = A small card that will allow you to procure any tier-1 PDV ship from the Dynasty's reserves.
+
+uplink-pdv-t2-voucher-name = PDV Tier 2 Ship Voucher
+uplink-pdv-t2-voucher-desc = A small card that will allow you to procure any tier-2 PDV ship from the Dynasty's reserves.
+
+uplink-pdv-t3-voucher-name = PDV Tier 3 Ship Voucher
+uplink-pdv-t3-voucher-desc = A small card that will allow you to procure any tier-3 PDV ship from the Dynasty's reserves.
 
 uplink-pdv-t1-hourglass-voucher-name = PDV Hourglass LPC [T1]
 uplink-pdv-t1-hourglass-voucher-desc = A small card that contains the data for the procurement of an Hourglass-class escort from the flagship's reserves.

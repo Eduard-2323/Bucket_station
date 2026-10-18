@@ -17,7 +17,7 @@
   - type: RevolverAmmoProvider
     whitelist:
       tags:
-      - Cartridge115x46mmAPRIP
+      - BaseCartridge115x46mmAPRIP
     capacity: 5
     proto: Cartridge115x46mmAPRIP
     chambers: [ True, True, True, True, True ]

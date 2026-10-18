@@ -452,6 +452,11 @@
   - WillToDie
   speciesBlacklist:
   - IPC
+  components:
+  - type: WillToDie
+    deadDecrease: 199
+
+- type: trait
   id: Heretic
   name: trait-heretic-name
   description: trait-heretic-desc
@@ -461,8 +466,16 @@
     components:
     - BorgChassis
   components:
-  - type: WillToDie
-    deadDecrease: 199
+  - type: AddComponentsAfterTime
+    excludedCompanies:
+    - PDV
+    addComponentsOnSelection:
+  - type: Contraband
+    hideValues: true
+    turnInValues:
+      Doubloon: 250
+  - type: Heretic
+
 
 - type: trait
   id: Restless
@@ -509,12 +522,3 @@
     speedModifierThresholds:
       "100": 0.75
       "150": 0.5
-  - type: AddComponentsAfterTime
-    excludedCompanies:
-    - PDV
-    addComponentsOnSelection:
-    - type: Contraband
-      hideValues: true
-      turnInValues:
-        Doubloon: 250
-    - type: Heretic

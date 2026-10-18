@@ -474,8 +474,6 @@
     hideValues: true
     turnInValues:
       Doubloon: 250
-  - type: Heretic
-
 
 - type: trait
   id: Restless

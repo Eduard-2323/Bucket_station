@@ -86,4 +86,7 @@ reagent-name-toxintrash = trash
 reagent-desc-toxintrash = An awful-smelling fluid. Deadly to non-vox.
 
 reagent-name-exotictoxin = exotic liquid
-reagent-desc-exotictoxin = A terrifyingly potent liquid used to make extremely advanced medications, don't use it alone however.
+reagent-desc-exotictoxin = A terrifyingly potent liquid used to make extremely advanced reagents, don't use it alone however.
+
+reagent-name-dipedrezene = Dipedrezene Oxide
+reagent-desc-dipedrezene = A toxin derived from impedrezene designed to slow down targets and rapidly poison them.

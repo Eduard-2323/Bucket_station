@@ -529,3 +529,29 @@
       amount: 1
   products:
     ExoticToxin: 5
+
+- type: reaction
+  id: Dipedrezene
+  reactants:
+    Impedrezene:
+      amount: 2
+    Hydroxide:
+      amount: 1
+    Sugar:
+      amount: 2
+    ExoticToxin:
+      amount: 1
+  products:
+    Dipedrezene: 5
+
+- type: reaction
+  id: StabilisedStimulants
+  reactants:
+    Stimulants:
+      amount: 2
+    ExoticToxin:
+      amount: 1
+    Vestine:
+      amount: 2
+  products:
+    StabilisedStimulants: 2.5

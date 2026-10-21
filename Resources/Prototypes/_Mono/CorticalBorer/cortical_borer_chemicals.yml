@@ -89,3 +89,7 @@
   cost: 10
   reagent: Barozine
 
+- type: borerChemical
+  id: borerPeridaxon
+  cost: 15
+  reagent: Peridaxon

@@ -42,3 +42,6 @@ reagent-desc-happiness = Fills you with ecstatic numbness and causes minor brain
 
 reagent-name-nitrosyl-plasmide = nitrosyl plasmide
 reagent-desc-nitrosyl-plasmide = A powerful stimulant that can prevent drowsiness, stuns and knock downs.
+
+reagent-name-stabilised-stimulants = stabilised hyperzine
+reagent-desc-stabilised-stimulants = An over-stabilised version of hyperzine, makes you extremely fast and unable to stop however fucking poisons you to death before you realise it if you overdose.

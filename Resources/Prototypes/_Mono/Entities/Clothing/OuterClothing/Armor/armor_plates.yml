@@ -26,11 +26,11 @@
     sprite: _Mono/Clothing/ArmorPlate/armor_plates.rsi
     size: Normal
   - type: ArmorPlateItem
-    maxDurability: 150
+    maxDurability: 225
     walkSpeedModifier: 0.90
     sprintSpeedModifier: 0.90
     staminaDamageMultipliers:
-      Absorbed: 0.5
+      Absorbed: 0.25
     damageToPlate:
       Blunt: 1
       Slash: 1
@@ -47,7 +47,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 225
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -66,14 +66,14 @@
     sprite: _Mono/Clothing/ArmorPlate/armor_plates.rsi
     size: Normal
   - type: ArmorPlateItem
-    maxDurability: 150
+    maxDurability: 200
     walkSpeedModifier: 0.90
     sprintSpeedModifier: 0.90
     staminaDamageMultipliers:
       Absorbed: 0.5
     damageToPlate:
       Piercing: 1
-      Heat: 1.5
+      Heat: 1.15
     absorptionRatios:
       Piercing: 1
       Heat: 0
@@ -83,7 +83,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 200
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -102,13 +102,13 @@
     sprite: _Mono/Clothing/ArmorPlate/armor_plates.rsi
     size: Normal
   - type: ArmorPlateItem
-    maxDurability: 150
+    maxDurability: 200
     walkSpeedModifier: 0.90
     sprintSpeedModifier: 0.90
     staminaDamageMultipliers:
       Absorbed: 0.5
     damageToPlate:
-      Piercing: 1.5
+      Piercing: 1.15
       Heat: 1
       Radiation: 0.5
       Shock: 0.5
@@ -122,7 +122,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 200
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -141,9 +141,9 @@
     sprite: _Mono/Clothing/ArmorPlate/armor_plates.rsi
     size: Normal
   - type: ArmorPlateItem
-    maxDurability: 250
-    walkSpeedModifier: 1.1
-    sprintSpeedModifier: 1.1
+    maxDurability: 275
+    walkSpeedModifier: 1.35
+    sprintSpeedModifier: 1.35
     staminaDamageMultipliers:
       Raw: 0.5
     damageToPlate:
@@ -162,7 +162,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 250 # Bet you wish it broke faster before it ruined your day
+        damage: 275 # Bet you wish it broke faster before it ruined your day
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -172,7 +172,7 @@
   parent: [BaseItem, ArmorPlateRepairableBase]
   id: ArmorPlateMulti
   name: ENEMY type-V armor plate
-  description: A robust slab of a copper and titanium alloy designed to withstand all types of damage
+  description: A robust lightweight plate of a copper and titanium alloy designed to withstand all types of damage.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/ArmorPlate/armor_plates.rsi
@@ -181,28 +181,28 @@
     sprite: _Mono/Clothing/ArmorPlate/armor_plates.rsi
     size: Normal
   - type: ArmorPlateItem
-    maxDurability: 350
-    walkSpeedModifier: 0.90
-    sprintSpeedModifier: 0.90
+    maxDurability: 500
+    walkSpeedModifier: 0.95
+    sprintSpeedModifier: 0.95
     staminaDamageMultipliers:
       Absorbed: 0.75
     damageToPlate:
       Piercing: 0.5
-      Heat: 0.5
-      Blunt: 0.75
-      Slash: 0.75
+      Heat: 0.75
+      Blunt: 0.25
+      Slash: 0.25
     absorptionRatios:
       Piercing: 1
       Heat: 1
-      Blunt: 0.75
-      Slash: 0.75
+      Blunt: 0.85
+      Slash: 0.85
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 350
+        damage: 500
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]

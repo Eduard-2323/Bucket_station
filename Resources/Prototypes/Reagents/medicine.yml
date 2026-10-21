@@ -1736,16 +1736,10 @@
       effects:
       - !type:EvenHealthChange
         conditions:
-        - !type:ReagentThreshold
-          min: 75
+        - !type:TotalDamage
+          min: 99
         damage:
-          Burn: -175
-          Toxin: -175
-          Airloss: -175
-          Brute: -175
-      - !type:AdjustReagent
-        conditions:
-        - !type:ReagentThreshold
-          min: 76
-        reagent: Rejuvazone
-        amount: -76
+          Burn: -325
+          Toxin: -325
+          Airloss: -325
+          Brute: -325

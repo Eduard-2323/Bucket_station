@@ -279,14 +279,14 @@
   - type: SolutionContainerVisuals
     emptySpriteName: revivalpen_empty
   - type: Hypospray
-    transferAmount: 75
+    transferAmount: 1
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 75.5
+        maxVol: 1
         reagents:
         - ReagentId: Rejuvazone
-          Quantity: 75.5
+          Quantity: 1
 
 - type: entity
   name: advanced combat medipen
@@ -316,3 +316,26 @@
           Quantity: 10
         - ReagentId: Peridaxon
           Quantity: 15
+
+- type: entity
+  name: advanced combat medipen
+  parent: NFChemicalMedipen
+  id: AdvCombatMedipen
+  description: An auto-injector conntaining a dose of stabilised hyperzine, don't be stupid with it
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: stabstimulants
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    emptySpriteName: stabstimulants_empty
+  - type: Hypospray
+    transferAmount: 17.5
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 17.5
+        reagents:
+        - ReagentId: StabilisedStimulants
+          Quantity: 17.5

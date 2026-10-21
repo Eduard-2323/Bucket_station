@@ -626,12 +626,12 @@
  
 - type: reagent
   id: StabilisedStimulants
-  name: reagent-name-stimulants
+  name: reagent-name-stabilised-stimulants
   group: Narcotics
-  desc: reagent-desc-stimulants
-  physicalDesc: reagent-physical-desc-energizing
+  desc: reagent-desc-stabilised-stimulants
+  physicalDesc: reagent-physical-desc-blazing
   flavor: sharp
-  color: "#9A040E"
+  color: "#97D4625"
   boilingPoint: 212.0
   meltingPoint: 170.0
   metabolisms:

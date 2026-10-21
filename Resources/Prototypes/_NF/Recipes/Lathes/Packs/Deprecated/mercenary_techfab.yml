@@ -112,6 +112,10 @@
   - PowerCellMicroreactor
 # Mercenary techfab
 ## Armor
+  - ArmorPlateBlunt_Slash
+  - ArmorPlatePierce
+  - ArmorPlateHeat
+  - ArmorPlateSpeed
   - TelescopicShield
   - ClothingOuterArmorBulletproofNF
   - ClothingOuterCoatBHTrench

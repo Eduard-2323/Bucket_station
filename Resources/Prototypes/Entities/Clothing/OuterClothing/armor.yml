@@ -3,7 +3,7 @@
 
 #Basic armor vest for inheritance
 - type: entity
-  parent: [RecyclableItemClothArmor, ClothingOuterBaseMedium, AllowSuitStorageClothing] # added RecyclableItemClothArmor
+  parent: [RecyclableItemClothArmor, ClothingOuterBaseMedium, AllowSuitStorageClothing, ClothingArmorPlate] # added RecyclableItemClothArmor
   id: ClothingOuterArmorBase
   name: armor vest
   abstract: true

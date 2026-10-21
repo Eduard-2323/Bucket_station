@@ -318,10 +318,10 @@
           Quantity: 15
 
 - type: entity
-  name: advanced combat medipen
+  name: sta. stimulant auto-injector
   parent: NFChemicalMedipen
-  id: AdvCombatMedipen
-  description: An auto-injector conntaining a dose of stabilised hyperzine, don't be stupid with it
+  id: StabilisedStimulantAutoInjector
+  description: An auto-injector containing a dose of stabilised hyperzine, don't be stupid with it
   components:
   - type: Sprite
     sprite: _NF/Objects/Specific/Medical/medipen.rsi

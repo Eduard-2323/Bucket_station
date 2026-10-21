@@ -631,7 +631,7 @@
   desc: reagent-desc-stabilised-stimulants
   physicalDesc: reagent-physical-desc-blazing
   flavor: sharp
-  color: "#97D4625"
+  color: "#D9CCCC"
   boilingPoint: 212.0
   meltingPoint: 170.0
   metabolisms:

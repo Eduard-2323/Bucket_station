@@ -2,13 +2,13 @@
   id: BaseCartridge115x46mmAPRIP
   name: cartridge (11.5x46mm AP RIP)
   parent: BaseCartridge
-  description: An extremely rare bullet for an ancient revolver
+  description: An extremely powerful round, how the fuck did this pass so many conventions.
   abstract: true
   components:
   - type: Tag
     tags:
       - Cartridge
-      - Cartridge115x46mm
+      - Cartridge115x46mmAPRIP
   - type: CartridgeAmmo
     proto: Bullet115x46mmAPRIP
   - type: Sprite

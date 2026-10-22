@@ -1,0 +1,62 @@
+- type: entity
+  id: BaseMagazine115x46mm
+  name: "magazine (11.5x46mm AP RIP)"
+  parent: [ BaseItem, RecyclableItemSteelTiny ]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Magazine115x46mmAPRIP
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge115x46mmAPRIP
+    proto: Cartridge115x46mmAPRIP
+    capacity: 400
+  - type: Item
+    size: Normal
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/11.5x46mm.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: Magazine115x46mmAPRIP
+  name: "magazine (11.5x46mm AP RIP)"
+  parent: BaseMagazine115x46mm
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge115x46mmAPRIP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: Magazine115x46mmEmpty
+  name: "magazine (11.5x46mm any)"
+  suffix: empty
+  parent: Magazine115x46mmAPRIP
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

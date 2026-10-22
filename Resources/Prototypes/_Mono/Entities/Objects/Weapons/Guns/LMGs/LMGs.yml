@@ -179,3 +179,75 @@
   - type: Appearance
   - type: StaticPrice
     price: 7500
+
+- type: entity
+  name: M1919 Browning Machine Gun (11.5x46mm)
+  parent: [BaseWeaponLightMachineGun, BaseGunWieldable]
+  id: WeaponBrowningLmg
+  description: An ancient firearm, one of the last of it's kind and modernised to be used to bring hell, use it well comrade.
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/LMGs/M1919.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: GunWieldBonus
+    minAngle: -10
+    maxAngle: -28
+  - type: Gun
+    minAngle: 12
+    maxAngle: 38
+    angleIncrease: 0.7
+    angleDecay: 0.3
+    fireRate: 8.3
+    cameraRecoilScalar: 0
+    selectedMode: FullAuto
+    damageModifier: 1
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/hmg.ogg
+  - type: ChamberMagazineAmmoProvider
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine115x46mmAPRIP
+        insertSound: /Audio/Weapons/Guns/MagIn/sfrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/hpistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine115x46mmAPRIP
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge115x46mmAPRIP
+        priority: 1
+        whitelist:
+          tags:
+          - Cartridge115x46mmAPRIP
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: Clothing
+    sprite: _Mono/Objects/Weapons/Guns/LMGs/M1919.rsi
+  - type: StaticPrice
+    price: 250000
+    vendPrice: 97500
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.7
+    sprintModifier: 0.6
+  - type: GunRequiresWield
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _RMC14/Interface/MousePointer/flamer_mouse.rsi
+      state: all

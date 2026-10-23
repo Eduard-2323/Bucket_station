@@ -187,7 +187,7 @@
   description: An ancient firearm, one of the last of it's kind and modernised to be used to bring hell, use it well comrade.
   components:
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/LMGs/M1919.rsi
+    sprite: _Mono/Objects/Weapons/Guns/LMGs/m1919.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -239,7 +239,7 @@
     zeroVisible: true
   - type: Appearance
   - type: Clothing
-    sprite: _Mono/Objects/Weapons/Guns/LMGs/M1919.rsi
+    sprite: _Mono/Objects/Weapons/Guns/LMGs/m1919.rsi
   - type: StaticPrice
     price: 250000
     vendPrice: 97500

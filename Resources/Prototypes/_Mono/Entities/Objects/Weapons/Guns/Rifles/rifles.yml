@@ -451,3 +451,76 @@
   - type: Appearance
   - type: StaticPrice # Mono
     price: 17500
+
+- type: entity
+  name: BC-CR MAR-50 "Contractor"
+  parent: BaseWeaponRifle
+  id: WeaponRifleMAR50
+  description: A rifle contracted for bucket Corp, we have no fucking idea where it comes from, but hey it's useable.
+  components:
+  - type: Item # Mono
+    size: Large
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/mar50.rsi # Mono
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/mar50.rsi
+  - type: ChamberMagazineAmmoProvider # Mono
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
+  - type: GunWieldBonus
+    minAngle: -30
+    maxAngle: -32
+  - type: Gun
+    minAngle: 30
+    maxAngle: 36
+    angleIncrease: 76
+    angleDecay: 7
+    cameraRecoilScalar: 0
+    fireRate: 7
+    selectedMode: SemiAuto
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/wt_fire.ogg # Mono
+    availableModes:
+    - Burst
+    - SemiAuto
+    - FullAuto
+    burstCooldown: 1
+    burstFireRate: 25
+    shotsPerBurst: 5
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine8x65mmSKR
+        insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/m16_magin.ogg # Mono
+        ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/skm_magout.ogg # Mono
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine556x45mmFMJ
+            - Magazine8x65mmSKR
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge8x65mmSKR
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge556x45mmFMJ
+            - Cartridge8x65mmSKR
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice # Mono
+    price: 24500

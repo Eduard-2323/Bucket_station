@@ -282,11 +282,11 @@
         volume: -25
     fireRate: 5
     selectedMode: Semiauto
-    damageModifier: 3
+    damageModifier: 1.2
     availableModes:
     - SemiAuto
   - type: GunSpreadModifier
-    spread: 0.3
+    spread: 0.6
   - type: BallisticAmmoProvider
     whitelist:
       tags:

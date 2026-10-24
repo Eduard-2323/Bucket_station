@@ -643,62 +643,51 @@
     - 0,0,3,2
 
 - type: entity
-  name: Schönheit der Vernichtung (5.7x28mm FMJ)
+  name: BC-CR MP5 (9x19mm)
   parent: [BaseWeaponSubMachineGun, BaseGunWieldable]
-  id: WeaponSubMachineGunMP18Schonheit
-  description: A submachine gun modified by her to serve and protect.
+  id: WeaponSubMachineGunMP5
+  description: An ancient submachine gun, remade in the modern standard for use by Bucket Corp.
   components:
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/SMGs/SchonheitderVernichtung.rsi
+    sprite: _Mono\Objects\Weapons\Guns\SMGs\mp5.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: GunWieldBonus
-    minAngle: -2.5
-    maxAngle: -7.5
+    minAngle: -5
+    maxAngle: -10
   - type: Clothing
-    sprite: _Mono/Objects/Weapons/Guns/SMGs/SchonheitderVernichtung.rsi
+    sprite: _Mono\Objects\Weapons\Guns\SMGs\mp5.rsi
   - type: Gun
-    minAngle: 4
-    maxAngle: 12.5
-    angleIncrease: 2
-    angleDecay: 4
-    fireRate: 8.3
-    damageModifier: 1.25
+    fireRate: 6.5
     selectedMode: FullAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/vector_fire.ogg
     availableModes:
+    - SemiAuto
     - FullAuto
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine57x28mmSubMachineSnailDrumFMJ
+        startingItem: Magazine9x19mmSubMachineGunPlasteelAP
         insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine57x28mmSubMachineSnailDrumFMJ
-            - Magazine9x19mmSubMachineSnailDrumFMJ
+            - Magazine9x19mmSubMachineGunFMJ
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge57x28mmFMJ
+        startingItem: Cartridge9x19mmPlasteelAP
         priority: 1
         whitelist:
           tags:
-            - Cartridge57x28mmFMJ
             - Cartridge9x19mmFMJ
   - type: MagazineVisuals
     magState: mag
     steps: 1
     zeroVisible: true
   - type: Appearance
-  - type: StaticPrice
-    price: 37500
-  - type: Item
-    shape:
-    - 0,0,3,1

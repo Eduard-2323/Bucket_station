@@ -383,7 +383,7 @@
       amount: 1
 
 - type: entity
-  name: BC-CF M16 (5.56x45mm)
+  name: BC-CR M16 (5.56x45mm)
   parent: BaseWeaponRifle
   id: WeaponRifleM16
   description: The M16, an ancient rifle of course modernised aswell for use by Bucket Corp, reliable and as such, make good use.
@@ -450,7 +450,7 @@
     zeroVisible: true
   - type: Appearance
   - type: StaticPrice # Mono
-    price: 17500
+    price: 985
 
 - type: entity
   name: BC-CR MAR-50 (8x65mm SKR)
@@ -523,4 +523,4 @@
     zeroVisible: true
   - type: Appearance
   - type: StaticPrice # Mono
-    price: 24500
+    price: 1050

@@ -10,7 +10,7 @@
        Piercing: 30
        Slash: 15
        Structural: 645
-    ignoreResistances: true
+    armorPenetration: 0.5
     penetrationThreshold: 315
     penetrationDamageTypeRequirement:
     - Structural

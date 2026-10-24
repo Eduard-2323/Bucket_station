@@ -203,4 +203,4 @@
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
   - type: StaticPrice
-    price: 14500
+    price: 875

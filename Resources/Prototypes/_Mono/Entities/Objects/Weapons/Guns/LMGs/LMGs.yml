@@ -146,7 +146,7 @@
     maxAngle: 55
     angleIncrease: 3
     angleDecay: 45
-    fireRate: 7.5
+    fireRate: 5.5
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/heavy_rifle_1.ogg
   - type: ChamberMagazineAmmoProvider
@@ -156,29 +156,29 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine762x54mmRFMJLarge
+        startingItem: Magazine762x51mmFMJLarge
         insertSound: /Audio/Weapons/Guns/MagIn/lmg_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/lmg_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - Magazine762x54mmRFMJLarge
-          - Magazine762x54mmRFMJ
+          - Magazine762x51mmFMJLarge
+          - Magazine762x51mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge762x54mmRFMJ
+        startingItem: Cartridge762x51mmFMJ
         priority: 1
         whitelist:
           tags:
-          - Cartridge762x54mmRFMJ
+          - Cartridge762x51mmFMJ
   - type: MagazineVisuals
     magState: mag
     steps: 1
     zeroVisible: true
   - type: Appearance
   - type: StaticPrice
-    price: 7500
+    price: 3250
 
 - type: entity
   name: M1919 Heavy Machine Gun (11.5x46mm)

@@ -150,3 +150,85 @@
       amount: 2
     - id: AmmoBox9x19mmFMJ
       amount: 2
+
+- type: entity
+  parent: WeaponCaseLong
+  id: WeaponCaseLongM16
+  suffix: Dungeon, M16
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleM16
+      amount: 1
+    - id: Magazine556x45mmFMJ
+      amount: 2
+    - id: AmmoBox556x45mmFMJ
+      amount: 2
+
+- type: entity
+  parent: WeaponCaseLong
+  id: WeaponCaseLongMAR50
+  suffix: Dungeon, MAR50
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleMAR50
+      amount: 1
+    - id: Magazine8x65mmSKR
+      amount: 2
+    - id: AmmoBox8x65mmSKR
+      amount: 2
+
+- type: entity
+  parent: WeaponCaseLong
+  id: WeaponCaseLongMP5
+  suffix: Dungeon, MP5
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponSubMachineGunMP5
+      amount: 1
+    - id: Magazine9x19mmSubMachineGunFMJ
+      amount: 2
+    - id: AmmoBox9x19mmFMJ
+      amount: 2
+
+- type: entity
+  parent: WeaponCaseShort
+  id: WeaponCaseShortm1911
+  suffix: Dungeon, m1911
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponPistolm1911
+      amount: 1
+    - id: Magazine45_ACPPistolPlasteelAP
+      amount: 2
+
+- type: entity
+  parent: WeaponCaseHeavy
+  id: WeaponCaseHeavyBAR
+  suffix: Dungeon, BAR
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponLMGBAR
+      amount: 1
+    - id: Magazine762x51mmFMJLarge
+      amount: 2
+    - id: AmmoBox762x51mmFMJ
+      amount: 2
+
+- type: entity
+  parent: WeaponCaseLong
+  id: WeaponCaseLongMP18
+  suffix: Dungeon, MP18
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponSubMachineGunMP18
+      amount: 1
+    - id: Magazine9x19mmSubMachineSnailDrumFMJ
+      amount: 2
+    - id: AmmoBox9x19mmFMJ
+      amount: 2

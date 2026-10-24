@@ -92,6 +92,9 @@
   - WeaponRifleSVSUSSP #Mono
   - WeaponSniperMosinUSSP #Mono
   - WeaponSubMachineGunAK220USSP #Mono
+  - WeaponSubMachineGunMP18
+  - Magazine9x19mmSubMachineGunSnailDrumFMJ
+  - Magazine9x19mmSubMachineGunSnailDrumEmpty
   ## Cyborg Modules
   - BorgModuleMercenary # mono
 

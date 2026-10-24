@@ -402,8 +402,8 @@
 - type: entity
   parent: Thruster
   id: Thruster_bucket
-  name: Bucket corp branded arc thruster
-  description: an very poorly built arc thruster that somehow provides an large amount of power
+  name: BC arc thruster
+  description: an advanced Bucket crop branded arc thruster being alot more efficent and powerfull
   components:
   - type: Sprite
     sprite: Structures/Shuttles/bucket_thrust.rsi
@@ -420,4 +420,8 @@
       visible: false
       offset: 0, 1
   - type: Thruster
-    thrust: 500
+    thrust: 5000
+    baseThrust: 5000
+  - type: ShipRepairable
+    repairTime: 15
+    repairCost: 15

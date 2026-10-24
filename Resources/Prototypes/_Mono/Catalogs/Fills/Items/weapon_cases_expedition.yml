@@ -232,3 +232,17 @@
       amount: 2
     - id: AmmoBox9x19mmFMJ
       amount: 2
+
+- type: entity
+  parent: WeaponCaseLong
+  id: WeaponCaseLongM27D
+  suffix: Dungeon, M27D
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleM27D
+      amount: 1
+    - id: Magazine635x40mmCaselessBig
+      amount: 2
+    - id: AmmoBox635x40mmCaseless
+      amount: 2

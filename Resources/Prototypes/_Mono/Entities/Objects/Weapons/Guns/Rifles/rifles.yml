@@ -478,7 +478,7 @@
   - type: Gun
     minAngle: 30
     maxAngle: 36
-    angleIncrease: 76
+    angleIncrease: 3
     angleDecay: 7
     cameraRecoilScalar: 0
     fireRate: 7
@@ -524,3 +524,73 @@
   - type: Appearance
   - type: StaticPrice # Mono
     price: 1050
+
+- type: entity
+  name: BC-CR M27-D (6.35x40mm Caseless)
+  parent: BaseWeaponRifle
+  id: WeaponRifleM27D
+  description: A high capacity high firerate rifle, unsure of it's origins but we found the blueprints.
+  components:
+  - type: Item # Mono
+    size: Large
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/m27d.rsi # Mono
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/m27d.rsi
+  - type: ChamberMagazineAmmoProvider # Mono
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
+  - type: GunWieldBonus
+    minAngle: -21
+    maxAngle: -39
+  - type: Gun
+    minAngle: 21
+    maxAngle: 48
+    angleIncrease: 1
+    angleDecay: 9
+    cameraRecoilScalar: 0
+    fireRate: 7.5
+    selectedMode: FullAuto
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/gun_carbine_fire.ogg
+    availableModes:
+    - Burst
+    - FullAuto
+    burstCooldown: 1
+    burstFireRate: 10
+    shotsPerBurst: 5
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine635x40mmCaselessBig
+        insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/m16_magin.ogg # Mono
+        ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/skm_magout.ogg # Mono
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine635x40mmCaseless
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge635x40mmCaseless
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge635x40mmCaseless
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice # Mono
+    price: 1650

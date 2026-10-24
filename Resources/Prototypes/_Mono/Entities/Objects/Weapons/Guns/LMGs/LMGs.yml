@@ -120,7 +120,7 @@
           - MonoOptic8x
 
 - type: entity
-  name: BC-CR BAR "Adjudicator" (7.62x54mmR)
+  name: BC-CR Browning Automatic Rifle (7.62x54mmR)
   parent: BaseWeaponLightMachineGun
   description: An ancient rifle used before humanity even had space travel, remade in the modern standard for mass use by Bucket Corp.
   id: WeaponLMGBAR
@@ -181,7 +181,7 @@
     price: 7500
 
 - type: entity
-  name: M1919 HMG "Dread" (11.5x46mm)
+  name: M1919 Heavy Machine Gun (11.5x46mm)
   parent: [BaseWeaponLightMachineGun, BaseGunWieldable]
   id: WeaponBrowningLmg
   description: An ancient firearm, one of the last of it's kind and modernised to be used to bring hell, use it well comrade.

@@ -383,7 +383,7 @@
       amount: 1
 
 - type: entity
-  name: BC-CF M16 "Reclaimer" (5.56x45mm)
+  name: BC-CF M16 (5.56x45mm)
   parent: BaseWeaponRifle
   id: WeaponRifleM16
   description: The M16, an ancient rifle of course modernised aswell for use by Bucket Corp, reliable and as such, make good use.
@@ -453,7 +453,7 @@
     price: 17500
 
 - type: entity
-  name: BC-CR MAR-50 "Contractor"
+  name: BC-CR MAR-50 (8x65mm SKR)
   parent: BaseWeaponRifle
   id: WeaponRifleMAR50
   description: A rifle contracted for bucket Corp, we have no fucking idea where it comes from, but hey it's useable.
